@@ -1,0 +1,24 @@
+ Direct Function Call (Regular Call)
+📌 What it is?
+
+The most common way to call a function.
+You just write the function name followed by parentheses ().
+📌 Use Case:
+
+When you want to execute a function immediately, like showing a message or doing a calculation.
+2️⃣ Function Call Using Arguments (With Parameters)
+📌 What it is?
+
+You call a function and pass values (arguments) inside the parentheses.
+These values are used inside the function to perform different tasks.
+📌 Use Case:
+
+When you need to pass dynamic values (e.g., calculating the sum of two numbers or greeting different users).
+3️⃣ Function Call Inside Another Function (Nested Function Call)
+📌 What it is?
+
+A function is called inside another function.
+The outer function executes first, and then it calls the inner function.
+📌 Use Case:
+
+When you want to break complex tasks into smaller functions (e.g., one function for getting user input and another for processing it).
