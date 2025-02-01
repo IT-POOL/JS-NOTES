@@ -1,0 +1,56 @@
+Array Creation
+Using Array Literal (Recommended)
+
+let fruits = ["Apple", "Banana", "Mango"];
+Using the new Array() Constructor
+Accessing Array Elements
+console.log(fruits[0]); // Output: Apple
+console.log(fruits[2]); // Output: Mango
+
+console.log(fruits.length);
+Output: 3
+
+let numbers = new Array(1, 2, 3, 4);
+
+
+let animals = ["Cat", "Dog", "Elephant"];
+Index:    0       1        2
+Values:  Cat     Dog    Elephant
+***************************************************OBJECT*********************************************
+1. Object Creation Methods
+(A) Object Literal (Recommended)
+
+let person = {
+    name: "John",
+    age: 25,
+    city: "New York"
+};
+(B) Using new Object() Constructor
+
+let person = new Object();
+person.name = "John";
+person.age = 25;
+person.city = "New York";
+
+(C) Using Object.create()
+
+let person = Object.create({
+    name: "John",
+    age: 25
+});
+2. Accessing Object Properties
+Dot Notation (.) - Recommended
+
+console.log(person.name); // Output: John
+Bracket Notation ([])
+
+console.log(person["age"]); // Output: 25
+3. Adding & Updating Properties
+
+person.country = "USA"; // Add new property
+person.age = 26; // Update existing property
+console.log(person);
+4. Deleting a Property
+
+delete person.city;
+console.log(person);
