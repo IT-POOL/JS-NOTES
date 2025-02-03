@@ -9,10 +9,6 @@ console.log(fruits[2]); // Output: Mango
 
 console.log(fruits.length);
 Output: 3
-
-let numbers = new Array(1, 2, 3, 4);
-
-
 let animals = ["Cat", "Dog", "Elephant"];
 Index:    0       1        2
 Values:  Cat     Dog    Elephant
