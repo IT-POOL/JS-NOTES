@@ -1,0 +1,33 @@
+
+Simple Function
+function greet() {
+    console.log("Hello, Welcome to JavaScript!");
+}
+greet();
+************************
+Function with Parameters
+function add(a, b) {
+    console.log("Sum:", a + b);
+}
+add(5, 10);
+***********************
+Function with Return Value
+function multiply(a, b) {
+    return a * b;
+}
+let result = multiply(4, 5);
+console.log("Multiplication:", result);
+***********************
+Arrow Function
+const subtract = (a, b) => a - b;
+console.log("Subtraction:", subtract(10, 3));
+***********************
+Anonymous Function (Without Name)
+here function name is not mentioned value store in variable.
+const divide = function(a, b) {
+    return a / b;
+};
+console.log("Division:", divide(20, 4));
+
+
+
