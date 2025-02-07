@@ -1,0 +1,45 @@
+Arrow Function in JavaScript (Simple Explanation & Examples)
+🔹 What is an Arrow Function?
+Arrow functions (=>) are a shorter way to write functions in JavaScript. They were introduced in ES6 (ECMAScript 2015) and provide a clean and concise syntax.
+
+1️⃣ Basic Arrow Function
+🔸 Normal Function
+
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+console.log(greet("John"));  
+// Output: Hello, John!
+***********************************
+🔸 Arrow Function
+
+const greet = (name) => {
+  return "Hello, " + name + "!";
+};
+
+console.log(greet("John"));  
+// Output: Hello, John!
+***********
+Arrow Function Without Parameters
+👉 If there are no parameters, we use empty ().
+const sayHello = () => "Hello, World!";
+
+console.log(sayHello());  
+// Output: Hello, World!
+***********
+ Arrow Function with Multiple Parameters
+👉 If there are multiple parameters, use () around them.
+const add = (a, b) => a + b;
+
+console.log(add(5, 3));  
+***********************
+ Arrow Function with Multiple Lines (Using {} and return)
+👉 If the function has multiple statements, use {} and return.
+const multiply = (a, b) => {
+  let result = a * b;
+  return result;
+};
+👉 If the function has multiple statements, use {} and return.
+
+
