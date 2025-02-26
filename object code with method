@@ -1,0 +1,54 @@
+let obj1 = {
+  name : "ak",
+  age : 23,
+  job : "center-manager"
+}
+
+console.log(obj1);
+
+console.log(obj1.age);
+// console.log(obj1["age"]);
+// // console.log(Object.create(obj1));
+// console.log(Object.keys(obj1));
+// console.log(Object.values(obj1));
+***********************************
+
+let samsungModel = {
+ 
+  one : "nokia",
+   two : "iphone",
+  third : "vivo",
+  fourth : "moto",
+
+}
+console.log(samsungModel);
+console.log(samsungModel.third);
+console.log(samsungModel["third"]);
+console.log(Object.keys(samsungModel));
+console.log(Object.values(samsungModel));
+******************************************
+ 3. Adding & Updating Properties
+
+// samsungModel.fifth = "oppo"; // Add new property
+// samsungModel.third = "samsung"; // Update existing property
+// console.log(samsungModel);
+***************************************
+// // 4. Deleting a Property
+
+// delete samsungModel.fourth;
+// console.log(samsungModel);
+
+ ***************
+// Using Array for Multiple Values
+ Multiple People as Objects in an Array(array of object)
+//  const people = [
+//   { name: "Rahul", age: 23, id :102,salary: 12000},
+//     { name: "VIJAY", age: 56 },
+//        { name: "SHILPA", age: 23 }
+//  ];
+//  console.log(people);
+
+ console.log(Object.keys(people[0]));  // Output: ["name", "age", "id", "salary"]
+console.log(Object.values(people[1]));  // Output: ["VIJAY", 56]
+
+console.log(Object.values(people[2]));
