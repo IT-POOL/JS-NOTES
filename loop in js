@@ -1,5 +1,5 @@
-LOOP IN JAVASCRIPT.
- Difference Between for Loop and while Loop in JavaScript
+LOOP IN JAVASCRIPT.****Loops are used in JavaScript whenever we need to repeat tasks multiple times. They are used in web applications, data processing, automation, and much more
+ Difference Between for Loop and while 
 👉 Both for loop and while loop are used to execute a block of code multiple times.
 👉 The main difference is how they initialize, check the condition, and update the value.
 
