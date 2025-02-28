@@ -1,0 +1,164 @@
+LOOP IN JAVASCRIPT.
+ Difference Between for Loop and while Loop in JavaScript
+👉 Both for loop and while loop are used to execute a block of code multiple times.
+👉 The main difference is how they initialize, check the condition, and update the value.
+
+do...while Loop in JavaScript
+➡️ do...while loop is a type of loop in JavaScript that executes a block of code at least once, and then continues executing as long as a given condition is true.
+
+✅ Key Features:
+
+Executes the block at least once (even if the condition is false initially).
+Checks the condition after executing the block.
+Useful when you need to ensure that the code runs at least once.
+**************************************
+for...in and for...of Loops in JavaScript
+In JavaScript, both for...in and for...of loops are used to iterate over collections, but they work differently. Let's understand them with example
+
+1️⃣ for...in Loop
+📌 Used to iterate over the keys (property names) of an object.
+
+for (let key in object) {
+    // code to execute
+}
+🔹 Example with Objects
+let student = {
+    name: "John",
+    age: 21,
+    course: "JavaScript"
+};
+
+for (let key in student) {
+    console.log(key, ":", student[key]);
+}
+🔹 Output:
+name : John
+age : 21
+course : JavaScript
+📌 Explanation: The loop iterates over the keys (name, age, course) and accesses their values using student[key].
+******************************************
+🔹 Example with Arrays (Not Recommended)
+let colors = ["Red", "Green", "Blue"];
+
+for (let index in colors) {
+    console.log(index, ":", colors[index]);
+}
+🔹 Output:
+0 : Red
+1 : Green
+2 : Blue
+📌 Explanation: Here, for...in iterates over the index numbers of the array, not the values.
+
+⚠️ Note: for...in is mainly for objects. When used with arrays, it iterates over indices, which may cause unexpected results in some cases.
+
+2️⃣ for...of Loop
+📌 Used to iterate over values of an iterable (like arrays, strings, maps).
+✅ Works with arrays, strings, maps, sets, but not objects.
+
+🔹 Syntax:
+for (let value of iterable) {
+    // code to execute
+}
+************************************
+🔹 Example with Arrays
+let colors = ["Red", "Green", "Blue"];
+
+for (let color of colors) {
+    console.log(color);
+}
+🔹 Output:
+Red
+Green
+Blue
+📌 Explanation: Here, for...of directly gives the values of the array (not indices).
+************************************
+🔹 Example with Strings
+let word = "JavaScript";
+
+for (let char of word) {
+    console.log(char);
+}
+🔹 Output:
+J
+a
+v
+a
+S
+c
+r
+i
+p
+t
+📌 Explanation: It iterates over each character of the string.
+*************************************
+ 🔹Example with Sets
+let mySet = new Set(["Apple", "Banana", "Cherry"]);
+
+for (let fruit of mySet) {
+    console.log(fruit);
+}
+🔹 Output:
+Apple
+Banana
+Cherry
+📌 Explanation: for...of loops through each unique value in the Set.
+
+🔹 Example with Maps
+let myMap = new Map([
+    ["name", "Alice"],
+    ["age", 25],
+    ["country", "USA"]
+]);
+
+for (let [key, value] of myMap) {
+    console.log(key, ":", value);
+}
+🔹 Output:
+name : Alice
+age : 25
+country : USA
+📌 Explanation: for...of iterates through key-value pairs in a Map.
+
+************************************
+NOTE..................
+What is new Set() or new Map() in JavaScript?
+In JavaScript, new Set() and new Map() are used to create instances of Set and Map.
+They are special objects that behave differently from regular objects ({}) or arrays ([]).
+
+1️⃣ Why Do We Write new Set()?
+✅ Set is a built-in JavaScript object that stores unique values.
+✅ new Set([...]) creates a new Set instance with given values.
+**************************************************
+🔹 Example: Creating a Set
+let mySet = new Set(["Apple", "Banana", "Cherry"]); 
+🔸 new Set([...]) creates a Set object with unique values.
+🔸 Without new, Set would not work properly.
+****************************************************
+2️⃣ Why Do We Write new Map()?
+✅ Map is a built-in JavaScript object used to store key-value pairs.
+✅ new Map([...]) creates a new Map instance with given key-value pairs.
+
+🔹 Example: Creating a Map
+let myMap = new Map([
+    ["name", "Alice"],
+    ["age", 25],
+    ["city", "New York"]
+]);
+🔸 Here, new Map([...]) creates a new Map with key-value pairs.
+🔸 Without new, Map would not work properly.
+***************************************************
+📌 Why Do We Need new?
+new is required because Set and Map are object constructors.
+Without new, JavaScript won’t recognize them as objects.
+It tells JavaScript to create a new instance of the object.
+📌 What Happens If We Don’t Use new?
+❌ Without new (Incorrect Code)
+let mySet = Set(["Apple", "Banana", "Cherry"]); // ❌ ERROR!
+**********************************************
+✅ Correct Way:
+let mySet = new Set(["Apple", "Banana", "Cherry"]);
+*********************************************
+📌 Conclusion
+✔ new Set() creates a Set object that holds unique values.
+✔ new Map() creates a Map object that holds key-value pairs.
+✔ new keyword is necessary to create instances of Set and Map.
