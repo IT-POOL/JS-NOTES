@@ -1,0 +1,61 @@
+forEach() Loop in JavaScript
+The forEach() method is used to iterate over arrays and other iterable objects like Set and Map. It executes a function once for each element in the array.
+
+1️⃣ Syntax of forEach()
+array.forEach(function(element, index, array) {
+    // Code to execute
+});
+Parameters:
+1️⃣ element → The current element being processed.
+2️⃣ index (Optional) → The index of the current element.
+3️⃣ array (Optional) → The original array.
+
+2️⃣ Example: Basic forEach() with an Array
+let fruits = ["Apple", "Banana", "Cherry"];
+
+fruits.forEach(function(fruit) {
+    console.log(fruit);
+});
+📌 Explanation:
+
+forEach() loops through each item in the fruits array.
+It prints each fruit one by one.
+******************************************
+3️⃣ Using forEach() with Index
+let colors = ["Red", "Green", "Blue"];
+colors.forEach(function(color, index) {
+    console.log(`Index ${index}: ${color}`);
+});
+***************************************
+4️⃣ Using forEach() with Arrow Function (Shorter Syntax)
+let numbers = [10, 20, 30];
+numbers.forEach(num => console.log(num * 2));
+📌 Explanation:
+
+The arrow function num => console.log(num * 2) makes the code shorter.
+It prints each number multiplied by 2.
+************************************************
+5️⃣ forEach() with Map
+let myMap = new Map([
+    ["name", "John"],
+    ["age", 25],
+    ["city", "New York"]
+]);
+
+myMap.forEach((value, key) => {
+    console.log(key + " : " + value);
+});
+📌 Explanation:
+
+forEach() works on Map, looping through each key-value pair.
+***********************************************
+6️⃣ forEach() with Set
+let mySet = new Set(["Apple", "Banana", "Cherry"]);
+
+mySet.forEach(fruit => {
+    console.log(fruit);
+});
+📌 Explanation:
+
+Set does not allow duplicates, so forEach() iterates through unique values only.
+
