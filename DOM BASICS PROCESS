@@ -1,3 +1,69 @@
+🔹 What is DOM (Document Object Model)?
+DOM (Document Object Model) is a programming interface that allows JavaScript to interact with, modify, and update HTML and XML documents dynamically.
+
+👉 When a webpage loads, the browser creates a structured representation of the page called the DOM Tree.
+👉 JavaScript can then add, modify, or delete elements using the DOM API.
+
+🔹 Use Cases of DOM
+DOM is used in various ways to make websites dynamic and interactive. Some common use cases include:
+
+✅ 1. Changing Content Dynamically
+JavaScript can modify the text inside an HTML element without reloading the page.
+document.getElementById("demo").textContent = "Hello, JavaScript!";
+✅ 2. Handling Events (Click, Hover, etc.)
+DOM allows us to respond to user actions like clicking a button.
+document.getElementById("btn").addEventListener("click", function() {
+    alert("Button Clicked!");
+});
+✅ 3. Adding or Removing Elements
+JavaScript can dynamically add or remove elements from the page.
+let newElement = document.createElement("p");
+newElement.textContent = "This is a new paragraph!";
+document.body.appendChild(newElement);
+✅ 4. Changing Styles Dynamically
+We can change CSS properties using JavaScript and the DOM.
+document.getElementById("demo").style.color = "red";
+✅ 5. Form Validation
+DOM helps in validating user input before submitting a form.
+let name = document.getElementById("name").value;
+if (name === "") {
+    alert("Name cannot be empty!");
+}
+********************************************************
+🔹 What is a Node in DOM?
+A Node is any individual component in the DOM Tree. Everything in the DOM is treated as a Node.
+
+Types of Nodes in the DOM:
+1️⃣ Element Nodes → Represent HTML elements (<div>, <p>, <h1>, etc.)
+2️⃣ Text Nodes → Represent text inside an element (Hello World)
+3️⃣ Attribute Nodes → Represent attributes (class="container")
+4️⃣ Comment Nodes → Represent comments in the HTML (<!-- This is a comment -->)
+
+🔹 Example DOM Tree (Representation of HTML)
+<html>
+    <body>
+        <h1>Hello, World!</h1>
+    </body>
+</html>
+Corresponding DOM Tree:
+Document
+ ├── <html>
+ │    ├── <body>
+ │    │    ├── <h1> (Element Node)
+ │    │    │    ├── "Hello, World!" (Text Node)
+🔹 What is NodeList in JavaScript?
+A NodeList is a collection of Nodes (like an array) that are returned when we use DOM methods like querySelectorAll().
+**********************************************************
+🔹 Example of NodeList:
+<p class="text">Paragraph 1</p>
+<p class="text">Paragraph 2</p>
+<p class="text">Paragraph 3</p>
+
+<script>
+    let nodeList = document.querySelectorAll(".text"); 
+    console.log(nodeList);  // Outputs: NodeList(3) [p, p, p]
+</script>
+
 🔹 How HTML Loads and How DOM Helps in Modifying Content (With Diagram)
 📌 Step-by-Step Process of HTML Loading and DOM Modification
 When a web page loads in a browser, the browser follows a structured process to render the page. The Document Object Model (DOM) plays a crucial role in making web pages interactive. Below is the entire process from loading HTML to modifying content using JavaScript.
